@@ -1,0 +1,67 @@
+.textarea {
+    border: 2px solid black;
+    resize: none;
+    border-radius: 7px;
+    font-size: large;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+.input {
+    border-radius: 7px;
+    font-size: large;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.label {
+    font-size: 23px;
+    padding: 0px 10px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.addevent {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.innerForm {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+.eventDescription {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.Button {
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: aquamarine;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px 40px;
+}
+
+.Button:hover {
+    cursor: pointer;
+    padding: 12px 45px;
+    transition: 0.2s;
+    background-color: #21ffb5;
+}
+
+.Button:active {
+    cursor: pointer;
+    padding: 12px 45px;
+    background-color: #02de95;
+}
+
