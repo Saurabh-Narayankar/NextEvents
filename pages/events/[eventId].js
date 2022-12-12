@@ -42,7 +42,7 @@ export async function getServerSideProps(context) {
 
   const { params } = context
 
-  let event = await fetch(`/api/events/${params.eventId}`);
+  let event = await fetch(`https://saurabhn-nextevents.netlify.app/api/events/${params.eventId}`);
   event = await event.json()
 
   return {

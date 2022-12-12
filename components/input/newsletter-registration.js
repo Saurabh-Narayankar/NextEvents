@@ -10,7 +10,7 @@ function NewsletterRegistration() {
 
     const emailInput = emailRef.current.value
 
-    fetch('/api', {
+    fetch('https://saurabhn-nextevents.netlify.app/api', {
       method: 'POST',
       body: emailInput
     }).then(res => res.json()).then(data => console.log(data))

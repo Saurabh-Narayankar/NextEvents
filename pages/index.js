@@ -19,7 +19,7 @@ function HomePage(props) {
 }
 
 export async function getServerSideProps() {
-  let featuredEvents = await fetch('/api')
+  let featuredEvents = await fetch('https://saurabhn-nextevents.netlify.app/api')
   featuredEvents = await featuredEvents.json()
 
   return {

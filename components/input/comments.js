@@ -26,7 +26,7 @@ function Comments(props) {
   function addCommentHandler(commentData) {
     const commentObj = commentData
 
-    fetch(`/api/events/${eventId}`, {
+    fetch(`https://saurabhn-nextevents.netlify.app/api/events/${eventId}`, {
       method: 'POST',
       body: JSON.stringify(commentObj),
       headers: {
