@@ -34,7 +34,7 @@ function AllEventsPage(props) {
 }
 
 export async function getServerSideProps() {
-  let events = await fetch('http://localhost:3000/api/events')
+  let events = await fetch('/api/events')
   events = await events.json()
 
   return {

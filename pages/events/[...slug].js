@@ -108,7 +108,7 @@ export const getServerSideProps = async (context) => {
   const year = slug[0]
   const month = slug[1]
 
-  let events = await fetch(`http://localhost:3000/api/events/${year}/${month}`)
+  let events = await fetch(`/api/events/${year}/${month}`)
   events = await events.json()
 
   return{

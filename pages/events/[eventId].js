@@ -42,7 +42,7 @@ export async function getServerSideProps(context) {
 
   const { params } = context
 
-  let event = await fetch(`http://localhost:3000/api/events/${params.eventId}`);
+  let event = await fetch(`/api/events/${params.eventId}`);
   event = await event.json()
 
   return {

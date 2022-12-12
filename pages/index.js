@@ -19,7 +19,7 @@ function HomePage(props) {
 }
 
 export async function getServerSideProps() {
-  let featuredEvents = await fetch('http://localhost:3000/api')
+  let featuredEvents = await fetch('/api')
   featuredEvents = await featuredEvents.json()
 
   return {
