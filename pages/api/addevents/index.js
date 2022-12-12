@@ -10,7 +10,7 @@ export default async function handler(req, res) {
 
         const eventObj = { title, description, location, date, isFeatured, comments: [] }
 
-        const client = await MongoClient.connect('mongodb+srv://saurabh:saurabh@eventsdb.0cxryy0.mongodb.net/?retryWrites=true&w=majority')
+        const client = await MongoClient.connect(process.env.MONGODB_URI)
         const db = client.db('events')
         await db.collection('events detail').insertOne(eventObj)
         client.close()
