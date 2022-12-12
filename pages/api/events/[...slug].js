@@ -1,4 +1,4 @@
-import { MongoClient } from "mongodb"
+import { MongoClient } from 'mongodb'
 
 export default async function handler(req, res) {
     const slug = req.query.slug
@@ -10,6 +10,5 @@ export default async function handler(req, res) {
       const allEvents = await db.collection('events detail').find().toArray()
       client.close()
       res.status(200).json({allevents: allEvents})
-
     }
 }

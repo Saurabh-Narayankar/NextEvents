@@ -34,7 +34,7 @@ function AllEventsPage(props) {
 }
 
 export async function getServerSideProps() {
-  let events = await fetch('https://saurabhn-nextevents.netlify.app/api/events')
+  let events = await fetch('http://localhost:3000/api/events')
   events = await events.json()
 
   return {

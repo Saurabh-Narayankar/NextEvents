@@ -1,6 +1,6 @@
 // import fs from 'fs'
 // import path from 'path'
-import { MongoClient } from "mongodb"
+import { MongoClient } from 'mongodb'
 
 export default async function handler(req, res) {
 

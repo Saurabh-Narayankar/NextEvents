@@ -13,7 +13,7 @@ const AddEvent = () => {
         event.preventDefault()
         const eventDetails = { title: titleRef.current.value, description: descriptionRef.current.value, location: locationRef.current.value, date: event.target.date.value, isFeatured: isFeaturedRef.current.value }
         
-        fetch('https://saurabhn-nextevents.netlify.app/api/addevents', {
+        fetch('http://localhost:3000/api/addevents', {
             method: 'POST',
             body: JSON.stringify(eventDetails),
             headers: {
